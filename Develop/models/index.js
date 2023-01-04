@@ -23,7 +23,7 @@ through: {
   model: ProductTag,
   unique: false
 },
-as: 'category_product'
+as: 'tag_product'
 });
 
 // Tags belongToMany Products (through ProductTag)
@@ -32,7 +32,7 @@ Tag.belongsToMany(Product, {
     model: ProductTag,
     unique: false
   },
-as: 'tag_product'
+as: 'p_tag'
 });
 
 module.exports = {
