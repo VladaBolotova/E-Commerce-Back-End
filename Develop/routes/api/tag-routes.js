@@ -55,7 +55,9 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-  .then(tag)
+  .then((tag) => {
+    res.json(tag)
+  })
 });
 
 
